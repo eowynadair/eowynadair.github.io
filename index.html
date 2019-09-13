@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Pagesle</title>
-</head>
-    <style>
-        .navbar{
-            background-color:mediumpurple;
-            width: 100%;
-            height:64px;
-            overflow:none;
-        }
-        .navbar a, .morelinks{
-            color:white;
-            font-size:24px;
-            text-decoration: none;
-            padding:16px;
-            float:left;
-        }
-        .navbar a:hover, .morelinks:hover{
-            background-color:lightblue;
-            
-        }
-        .morelinks:hover .dropdowncontent{
-            display:block;
-        }
-        .morelinks {
-            color:white;
-            font-size:24px;
-            text-decoration: none;
-            padding:16px;
-            float:left;
-        }
-        .dropdown-content{
-            position:absolute;
-            
-        }
-    </style>
-    <body>
-        <div class="navbar">
-            <a href="https://www.yahoo.com">Yahoo</a>
-            <a href="https://www.google.com">Google</a>
-            <a href="https://www.yahoo.com">Yahoo</a>
-            
-        <div class="dropdown">
-            <div class="morelinks">more links</div>
-            <div class="dropdown-content">
-                <a href="https://www.awseducate.com">aws educate</a>
-                <a href="collegeboard.org">Collegeboard</a>
-        </div>
+  <head>
 
-    </body>
+    <title>eowyn</title>
+
+    <style>
+      .navbar{
+        background-color: black;
+        width: 100%;
+        height: 64px;
+      }
+
+      .navbar a, .morelinks {
+        color: white;
+        font-size: 24px;
+        text-decoration: none;
+        padding:16px;
+        float:left;
+      }
+
+      .navbar a:hover, .morelinks:hover{
+        background-color: pink;
+      }
+
+      .morelinks:hover .dropdown-content{
+        display:block;
+      }
+
+      .dropdown-content{
+        position: absolute;
+      }
+
+
+
+    </style>
+
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="https://www.yahoo.com">Yahoo</a>
+      <a href="https://www.google.com">Google</a>
+      <a href="https://www.yahoo.com">Yahoo</a>
+      <div class="dropdown">
+        <div class="morelinks">More Links</div>
+        <div class="dropdown-content">
+          <a href="https://www.awseducate.com">AWS Educate</a>
+          <a href="https://www.collegeboard.org">College Board</a>
+        </div>
+      </div>  
+
+    </div>
+
+  </body>
 </html>
