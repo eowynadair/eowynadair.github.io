@@ -1,72 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-
-    <title>eowyn</title>
-
-    <style>
-      .navbar{
-        background-color: black;
+<head>
+<title>Home</title>
+<style>
+    .navbar{ 
+        list-style: none;
+        background-color:black;
         overflow:hidden;
-      }
-
-      .navbar a {
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-        padding:16px;
-        float:left;
-      }
-
-      .navbar a:hover, .morelinks:hover{
-        background-color: #CB1414;
-      }
-
-      .dropdown:hover .dropdown-content{
-        display:block;
-      }
-
-      .dropdown-content{
-        position: absolute;
-        z-index: 98;
-        display:none;
-        background-color:black;
-      }
-    .dropdown {
-        background-color:black;
-        color:white;
-        float:left;
+        padding:0;
+    }
+    .navbar a, .dropdown div{
         text-decoration:none;
+        color:white;
         font-size:24px;
-    }
-    .dropdown-content a{
-        float:none;
-        display:block;
-    }
-    .morelinks {
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
         padding:16px;
+        display:inline-block;
     }
-
+    .navbar li{
+        float:left;
+    }
+    .navbar li:hover{
+        background-color:lightpink;   
+    }
+    .dropdown-content{
+        list-style:none;
+        padding: 0;
+    }
+    .dropdown-content li{
+        float:none;
+    }
+    
     </style>
-
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="https://www.yahoo.com">Yahoo</a>
-      <a href="https://www.google.com">Google</a>
-      <a href="https://www.yahoo.com">Yahoo</a>
-      <div class="dropdown">
-        <div class="morelinks">More Links</div>
-        <div class="dropdown-content">
-          <a href="https://www.awseducate.com">AWS Educate</a>
-          <a href="https://www.collegeboard.org">College Board</a>
-        </div>
-      </div>  
-
-    </div>
-
-  </body>
+</head>
+    <body>
+        <ul class="navbar">
+            <li><a href=https://www.google.com>Google</a></li>
+            <li><a href=https://awseducate.com>AWS Educate</a></li>
+            <li>
+                <li class="dropdown">
+                
+                <div>More Links</div>
+                
+                <ul class="dropdown-content">
+                    <li><a href="#">project 1</a></li>
+                    <li><a href="#">project 2</a></li>
+                    <li><a href="#">project 3</a></li>
+                </ul>
+                
+                
+            </li>
+        </ul>
+    </body>
 </html>
