@@ -1,6 +1,7 @@
 .navbar{ 
         list-style: none;
-        background-color:black;
+        background: rgb(19,14,27);
+        background: linear-gradient(90deg, rgba(19,14,27,1) 0%, rgba(76,55,106,1) 31%, rgba(108,40,205,1) 67%, rgba(124,0,255,1) 100%);
         overflow:hidden;
         padding:0;
     }
@@ -15,7 +16,7 @@
         float:left;
     }
     .navbar li:hover{
-        background-color:pink;   
+        background-color:lightblue;   
     }
     .dropdown-content{
         list-style:none;
@@ -23,7 +24,8 @@
         display:none;
         position:absolute;
         z-index:1;
-        background-color:black;
+        background: rgb(124,0,255);
+background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%, rgba(76,55,106,1) 65%, rgba(0,0,0,1) 100%);
     }
     .dropdown-content li{
         float:none;
@@ -33,4 +35,8 @@
     }
     .active{
         background-color:gray;
+    }
+    body{
+        background: rgb(124,0,255);
+background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%, rgba(76,55,106,1) 65%, rgba(0,0,0,1) 100%);
     }
