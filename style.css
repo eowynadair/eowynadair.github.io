@@ -40,3 +40,6 @@ background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%,
         background: rgb(124,0,255);
 background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%, rgba(76,55,106,1) 65%, rgba(0,0,0,1) 100%);
     }
+  td{
+      color:lightblue;
+  }
