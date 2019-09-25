@@ -1,4 +1,4 @@
-.navbar{ 
+.navbar{
         list-style: none;
         background: rgb(19,14,27);
         background: linear-gradient(90deg, rgba(19,14,27,1) 0%, rgba(76,55,106,1) 31%, rgba(108,40,205,1) 67%, rgba(124,0,255,1) 100%);
@@ -16,7 +16,7 @@
         float:left;
     }
     .navbar li:hover{
-        background-color:lightblue;   
+        background-color:lightblue;
     }
     .dropdown-content{
         list-style:none;
@@ -37,8 +37,8 @@ background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%,
         background-color:gray;
     }
     body{
-        background: rgb(124,0,255);
-background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%, rgba(76,55,106,1) 65%, rgba(0,0,0,1) 100%);
+        background: rgb(68,63,150);
+background: linear-gradient(90deg, rgba(68,63,150,1) 0%, rgba(23,22,113,1) 18%, rgba(9,9,121,1) 44%, rgba(6,67,159,1) 60%, rgba(4,125,197,1) 76%, rgba(33,188,219,1) 100%);
     }
   td{
       color:lightblue;
