@@ -37,8 +37,7 @@ background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%,
         background-color:gray;
     }
     body{
-        background: rgb(68,63,150);
-background: linear-gradient(90deg, rgba(68,63,150,1) 0%, rgba(23,22,113,1) 18%, rgba(9,9,121,1) 44%, rgba(6,67,159,1) 60%, rgba(4,125,197,1) 76%, rgba(33,188,219,1) 100%);
+       background:"Snapchat-241959788.jpg"
     }
   td{
       color:lightblue;
