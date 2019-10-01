@@ -1,7 +1,6 @@
 .navbar{
         list-style: none;
-        background: rgb(19,14,27);
-        background: linear-gradient(90deg, rgba(19,14,27,1) 0%, rgba(76,55,106,1) 31%, rgba(108,40,205,1) 67%, rgba(124,0,255,1) 100%);
+        background:clear;
         overflow:hidden;
         padding:0;
     }
@@ -24,8 +23,7 @@
         display:none;
         position:absolute;
         z-index:1;
-        background: rgb(124,0,255);
-background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%, rgba(76,55,106,1) 65%, rgba(0,0,0,1) 100%);
+        background:clear;
     }
     .dropdown-content li{
         float:none;
@@ -34,10 +32,11 @@ background: linear-gradient(90deg, rgba(124,0,255,1) 0%, rgba(108,40,205,1) 26%,
         display:block;
     }
     .active{
-        background-color:gray;
+        background-color:lightblue;
     }
     body{
-    background-image:url("images/I%2Bcurrently%2Bhave%2Ba%2Brotting%2Btooth%2Bwhere%2Bi%2Bgot%2Ba%2B_fe6b3929b817826677e8881f67727802.jpg")
+    background: rgb(22,17,103);
+background: linear-gradient(90deg, rgba(22,17,103,1) 0%, rgba(31,29,161,1) 18%, rgba(13,13,179,1) 44%, rgba(10,82,191,1) 60%, rgba(27,132,194,1) 76%, rgba(3,193,231,1) 100%);
     }
   td{
       color:lightblue;
