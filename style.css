@@ -35,9 +35,20 @@
         background-color:lightblue;
     }
     body{
-    background: rgb(22,17,103);
-background: linear-gradient(90deg, rgba(22,17,103,1) 0%, rgba(31,29,161,1) 18%, rgba(13,13,179,1) 44%, rgba(10,82,191,1) 60%, rgba(27,132,194,1) 76%, rgba(3,193,231,1) 100%);
+   background: rgb(184,180,226);
+background: linear-gradient(90deg, rgba(184,180,226,1) 0%, rgba(153,210,222,1) 100%);
     }
-  td{
-      color:lightblue;
-  }
+  td {
+  height: 50px;
+  vertical-align: bottom;
+  color:black;
+}
+table, td, th {
+  border: 1px solid black;
+  table-layout:fixed
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
