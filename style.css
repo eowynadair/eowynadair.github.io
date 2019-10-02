@@ -45,7 +45,7 @@ background: linear-gradient(90deg, rgba(184,180,226,1) 0%, rgba(153,210,222,1) 1
 }
 table, td, th {
   border: 1px solid black;
-  table-layout:auto;
+  table-layout:inherit;
 
 table {
   border-collapse: collapse;
