@@ -1,6 +1,7 @@
 .navbar{
         list-style: none;
-        background:clear;
+        background: rgb(237,0,255);
+        background: linear-gradient(90deg, rgba(237,0,255,1) 0%, rgba(0,230,255,1) 100%);
         overflow:hidden;
         padding:0;
     }
@@ -23,7 +24,8 @@
         display:none;
         position:absolute;
         z-index:1;
-        background:clear;
+        background: rgb(237,0,255);
+        background: linear-gradient(90deg, rgba(237,0,255,1) 0%, rgba(0,230,255,1) 100%);
     }
     .dropdown-content li{
         float:none;
