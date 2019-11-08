@@ -21,13 +21,45 @@
             display:flex;
             align-items: center;
             justify content: center;
-            background-color:#6e1215;
+            background-color:#d98989;
         }
         #rightpane{
             width:44%;
             height:100%;
             float:left;
             background-color:blue;
+        }
+        #storytext{
+            position:absolute;
+            bottom:50px;
+            top:0px;
+            left:56%;
+            right:0px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:pink;
+        }
+        #choices{
+            position:absolute;
+            bottom:0px;
+            left:56%;
+            right:0px;
+            height:50px;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            background-color:#db72a7;
+        }
+        #b1{
+            display: inline-block;
+            background-color:purple;
+            color:white;
+            font-size:16px;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 8px;
         }
    </style>
 
@@ -55,7 +87,20 @@
 
         <div id='container'>
             <div id='leftpane'>
-            <div id='rightpane'>
+            </div>
 
+            <div id='rightpane'>
+                <div id='storytext'>
+                </div>
+
+                <div id='choices'>
+                    <a id='b1' href='#'> Choice 1</a>
+                    <a id='b2' href='#'> Choice 2</a>
+                    <a id='b3' href='#'> Choice 3</a>
+                    <a id='b4' href='#'> Choice 4</a>
+                    <a id='b5' href='#'> Choice 5</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
