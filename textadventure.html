@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +22,7 @@
             display:flex;
             align-items: center;
             justify content: center;
-            background-color:#d98989;
+            background-color:#d1befa;
         }
         #rightpane{
             width:44%;
@@ -38,7 +39,8 @@
             display:flex;
             align-items:center;
             justify-content:center;
-            background-color:pink;
+            background-color:#8667c9;
+            padding: 8px;
         }
         #choices{
             position:absolute;
@@ -49,11 +51,11 @@
             display:flex;
             align-items:center;
             justify-content: center;
-            background-color:#db72a7;
+            background-color:#711ec9;
         }
-        #b1{
+        #b1, #b2, #b3, #b4, #b5{
             display: inline-block;
-            background-color:purple;
+            background-color:#7c00ff;
             color:white;
             font-size:16px;
             padding: 10px;
@@ -61,6 +63,18 @@
             text-decoration: none;
             margin: 8px;
         }
+    #ptext1{
+        color: blue;
+    }
+    #ptext2{
+        color: green;
+    }
+
+    #storyimg{
+        max-height: 94%;
+        max-width: 94%;
+        width: 94%; 
+    }
    </style>
 
 </head>
@@ -85,22 +99,85 @@
             </li>
         </ul>
 
-        <div id='container'>
-            <div id='leftpane'>
-            </div>
+         <div id='container'>
+        <div id='leftpane'>
+            <img id='storyimg' src="images/cat.png">
+        </div>
 
             <div id='rightpane'>
                 <div id='storytext'>
+                    <p id="ptext1">oof</p>
+                    <p id="ptext2"></p>
+                    <p id="ptext3"></p>
+                    <p id="ptext4"></p>
                 </div>
 
                 <div id='choices'>
-                    <a id='b1' href='#'> Choice 1</a>
-                    <a id='b2' href='#'> Choice 2</a>
-                    <a id='b3' href='#'> Choice 3</a>
-                    <a id='b4' href='#'> Choice 4</a>
-                    <a id='b5' href='#'> Choice 5</a>
+                    <a id='b1' onclick= "bclick(1)" href='#'> Choice 1</a>
+                    <a id='b2' onclick= "bclick(2)" href='#'> Choice 2</a>
+                    <a id='b3' onclick= "bclick(3)" href='#'> Choice 3</a>
+                    <a id='b4' onclick= "bclick(4)" href='#'> Choice 4</a>
+                    <a id='b5' onclick= "bclick(5)" href='#'> Choice 5</a>
                 </div>
             </div>
         </div>
+
+        <script>
+    var pic = document.getElementById('storyimg');
+    var ptext1 = document.getElementById('ptext1');
+    var ptext2 = document.getElementById('ptext2');
+    var ptext3 = document.getElementById('ptext3');
+    var ptext4 = document.getElementById('ptext4');
+    var b1 = document.getElementById('b1');
+    var b2 = document.getElementById('b2');
+    var b3 = document.getElementById('b3');
+    var b4 = document.getElementById('b4');
+    var state = "intro";
+    intro();
+
+    function intro(){
+        pic.src = "images/wateringcan.jpg";
+        ptext1.innerHTML = "How to Break into a Bank, Continue?";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML ="Yes";
+        b2.innerHTML ="No";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+            state = "entrance";
+    }
+
+    function entrance(){
+       pic.src = "unnamed.png";
+        ptext1.innerHTML = "Do you want to use a vehicle?";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Yes, Car";
+        b2.innerHTML= "Yes, Scooter";
+        b3.innerHTML= "No";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "none";
+        b5.style.display = "none";
+            state = "weapon" ;
+    }
+        //state machine
+         function bclick(button){
+          if(state == "intro"){
+              if (button == 1){
+                  entrance();
+              }
+              else if(button == 2){
+                  //send them somewhere else
+              }
+          } 
+        }
+</script>
     </body>
 </html>
