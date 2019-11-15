@@ -148,35 +148,126 @@
         b3.style.display = "none";
         b4.style.display = "none";
         b5.style.display = "none";
-            state = "entrance";
     }
 
     function entrance(){
-       pic.src = "unnamed.png";
+       pic.src = "images/hqdefault.jpg";
         ptext1.innerHTML = "Do you want to use a vehicle?";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "";
         b1.innerHTML = "Yes, Car";
         b2.innerHTML= "Yes, Scooter";
-        b3.innerHTML= "No";
+        b3.innerHTML= "No, walk";
         b1.style.display = "block";
         b2.style.display = "block";
         b3.style.display = "block";
         b4.style.display = "none";
         b5.style.display = "none";
-            state = "weapon" ;
+         
     }
+
+    function weapon(){
+       pic.src = "images/ee.jpg";
+        ptext1.innerHTML = "Do you want to use a vehicle?";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "A gun";
+        b2.innerHTML= "A knife";
+        b3.innerHTML= "Squirt gun";
+        b4.innerHTML= "Apple Juice";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "block";
+        b5.style.display = "none";
+        
+    }
+    function enteringBank(){
+       pic.src = "";
+        ptext1.innerHTML = "How would you like to enter?";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Punch";
+        b2.innerHTML= "T-pose";
+        b3.innerHTML= "Tackle";
+        b4.innerHTML= "Kick";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "block";
+        b5.style.display = "none";
+        
+    }
+        function whatNow(){
+       pic.src = "";
+        ptext1.innerHTML = "How would you like to enter?";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Ask for autograph";
+        b2.innerHTML= "Hide";
+        b3.innerHTML= "Start dancing";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "none";
+        b5.style.display = "none";
+        
+    }
+
         //state machine
          function bclick(button){
           if(state == "intro"){
               if (button == 1){
                   entrance();
+                  state = "entrance";
+                
               }
               else if(button == 2){
                   //send them somewhere else
               }
-          } 
+          }
+            else if (state == "entrance"){
+                if(button == 1){
+                //bad ending
+            }
+            else if(button ==2){
+                //bad endign
+            }
+            else if(button ==3){
+                weapon();
+                state ="weapon";
+            }
+            }   
+            else if( state == "weapon"){
+                if (button == 1){
+                    //bad ending
+                }
+                else if(button ==2){
+                    //nope
+                }
+                else if(button ==3){
+                    //still no
+                }
+                else if(button ==4){
+                    enteringBank();
+                    state="enteringBank";
+                }
+            }
+            else if(state=="enteringBank");
+                if(button ==1){
+                    //bad
+                }
+                if(button==2){
+                    whatNow();
+                    state="whatNow"
+                }
+                if(button==3){
+                    //ending
+                }
            return false;
         }
 
