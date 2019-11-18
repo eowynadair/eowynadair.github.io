@@ -35,8 +35,7 @@
             bottom:50px;
             top:0px;
             left:56%;
-            right:0px;
-            display:flex;
+            right:0px;       
             align-items:center;
             justify-content:center;
             background-color:#8667c9;
@@ -166,13 +165,29 @@
         b5.style.display = "none";
          
     }
+    function firstEntrance(){
+       pic.src = "images/ee.jpg";
+        ptext1.innerHTML = "Ok u get to walk u dimwit";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "What entrance will you go through?";
+        b1.innerHTML = "The front doors";
+        b2.innerHTML= "The back door";
+        b3.innerHTML= "The ceiling";
+        b4.innerHTML= "The executive bathroom window";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "block";
+        b5.style.display = "none";
+    }
 
     function weapon(){
        pic.src = "images/ee.jpg";
-        ptext1.innerHTML = "Do you want to use a vehicle?";
+        ptext1.innerHTML = "Ok u get to walk u dimwit";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
-        ptext4.innerHTML = "";
+        ptext4.innerHTML = "What weapon will you choose?";
         b1.innerHTML = "A gun";
         b2.innerHTML= "A knife";
         b3.innerHTML= "Squirt gun";
@@ -217,6 +232,53 @@
         b5.style.display = "none";
         
     }
+    function insideNow(){
+       pic.src = "";
+        ptext1.innerHTML = "You're in. Which way will you go?";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Left";
+        b2.innerHTML= "Right";
+        b3.innerHTML= "Crawl in the air duct";
+        b4.innerHTML="Straight";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "block";
+        b5.style.display = "none";
+    }
+        function goingLeft(){
+       pic.src = "";
+        ptext1.innerHTML = "If you went left...";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "You find yourself in a storage room. There are two doors. One leads to the vault area and the other I don’t even know. Pick one.";
+        b1.innerHTML = "Left";
+        b2.innerHTML= "Right";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+        }
+
+         function goingRight(){
+       pic.src = "";
+        ptext1.innerHTML = "If y";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Left";
+        b2.innerHTML= "Right";
+        b3.innerHTML= "Crawl in the air duct";
+        b4.innerHTML="Straight";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "block";
+        b5.style.display = "none";
+        }
 
         //state machine
          function bclick(button){
@@ -238,10 +300,25 @@
                 //bad endign
             }
             else if(button ==3){
-                weapon();
-                state ="weapon";
+                firstEntrance();
+                state ="firstEntrance";
             }
-            }   
+            }
+            else if(state=="firstEntrance"){
+                if(button==1){
+                    //end
+                }
+                else if(button==2){
+                    //end
+                }
+                else if(button==3){
+                    //end
+                }        
+                else if(button==4){
+                    weapon();
+                    state="weapon";
+                }    
+                }   
             else if( state == "weapon"){
                 if (button == 1){
                     //bad ending
@@ -257,17 +334,46 @@
                     state="enteringBank";
                 }
             }
-            else if(state=="enteringBank");
+            else if(state=="enteringBank"){
                 if(button ==1){
                     //bad
                 }
-                if(button==2){
+               else if(button==2){
                     whatNow();
-                    state="whatNow"
+                    state="whatNow";
                 }
-                if(button==3){
+               else if(button==3){
                     //ending
                 }
+            }
+                else if(state=="whatNow"){
+                    if(button==1){
+                            //send somewhere else
+                    }
+                   else if(button==2){
+                        insideNow();
+                        state="insideNow";
+                        }
+                   else if(button==3){
+                        //send somewhere else
+                    }
+                }
+                else if(state=="insideNow"){
+                    if(button==1){
+                        goingLeft();
+                        state="goingLeft";
+                    }
+                    if(button==2){
+                        //end
+                    }
+                    if(button==3){
+                        //second of options(come back to this)
+         }
+                    if(button==4){
+                        //end
+                    }
+                }
+                el
            return false;
         }
 
