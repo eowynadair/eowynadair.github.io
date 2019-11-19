@@ -279,7 +279,35 @@
         b4.style.display = "block";
         b5.style.display = "none";
         }
-
+        function backFront(){
+       pic.src = "";
+        ptext1.innerHTML = "If y";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "Try out passcodes";
+        b2.innerHTML= "Kick the door";
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+        }
+        function inVault(){
+       pic.src = "";
+        ptext1.innerHTML = "In the vault";
+        ptext2.innerHTML = "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "I want money too";
+        b2.innerHTML= "Ok";
+        b3.innerHTML="Love your western accent."
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "block";
+        b4.style.display = "none";
+        b5.style.display = "none";
+        }
         //state machine
          function bclick(button){
           if(state == "intro"){
@@ -373,7 +401,24 @@
                         //end
                     }
                 }
-                el
+                else if(state=="goingLeft"){
+                    if(button==1){
+                        //later edit
+                    }
+                    else if(button==2){
+                        backFront();
+                        state="backFront";
+                    }
+                }
+                else if(state=="backFront"){
+                    if(button==1){
+                        //end
+                    }
+                    else if(button==2){
+                        inVault();
+                        state="inVault";
+                }
+            }
            return false;
         }
 
