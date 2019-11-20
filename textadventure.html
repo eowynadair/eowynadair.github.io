@@ -122,17 +122,18 @@
         </div>
 
         <script>
-    var pic = document.getElementById('storyimg');
-    var ptext1 = document.getElementById('ptext1');
-    var ptext2 = document.getElementById('ptext2');
-    var ptext3 = document.getElementById('ptext3');
-    var ptext4 = document.getElementById('ptext4');
-    var b1 = document.getElementById('b1');
-    var b2 = document.getElementById('b2');
-    var b3 = document.getElementById('b3');
-    var b4 = document.getElementById('b4');
-    var state = "intro";
-    intro();
+        {
+        var pic = document.getElementById('storyimg');
+        var ptext1 = document.getElementById('ptext1');
+        var ptext2 = document.getElementById('ptext2');
+        var ptext3 = document.getElementById('ptext3');
+        var ptext4 = document.getElementById('ptext4');
+        var b1 = document.getElementById('b1');
+        var b2 = document.getElementById('b2');
+        var b3 = document.getElementById('b3');
+        var b4 = document.getElementById('b4');
+        var state = "intro";
+        intro();
 
     function intro(){
         pic.src = "images/wateringcan.jpg";
@@ -148,9 +149,9 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-
+}
     function entrance(){
-       pic.src = "images/hqdefault.jpg";
+        pic.src = "images/hqdefault.jpg";
         ptext1.innerHTML = "Do you want to use a vehicle?";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -162,9 +163,9 @@
         b2.style.display = "block";
         b3.style.display = "block";
         b4.style.display = "none";
-        b5.style.display = "none";
-         
+        b5.style.display = "none"; 
     }
+
     function firstEntrance(){
        pic.src = "images/ee.jpg";
         ptext1.innerHTML = "Ok u get to walk u dimwit";
@@ -184,7 +185,7 @@
 
     function weapon(){
        pic.src = "images/ee.jpg";
-        ptext1.innerHTML = "Huh. Bobert, who wrote this script? Well then, I guess there’s            just a random window somewhere. Carry on then. ";
+        ptext1.innerHTML = "Huh. Bobert, who wrote this script? Well then, I guess there’s just a random window somewhere. Carry on then. ";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
         ptext4.innerHTML = "What weapon will you choose?";
@@ -197,8 +198,8 @@
         b3.style.display = "block";
         b4.style.display = "block";
         b5.style.display = "none";
-        
     }
+
     function enteringBank(){
        pic.src = "";
         ptext1.innerHTML = "You know, the school’s only a couple of blocks away. Maybe you should go there instead and get a brain, but ok, whatever you say I guess.";
@@ -213,8 +214,7 @@
         b2.style.display = "block";
         b3.style.display = "block";
         b4.style.display = "block";
-        b5.style.display = "none";
-        
+        b5.style.display = "none";   
     }
         function whatNow(){
        pic.src = "";
@@ -248,8 +248,9 @@
         b4.style.display = "block";
         b5.style.display = "none";
     }
-        function goingLeft(){
-       pic.src = "";
+
+  function goingLeft(){
+      pic.src = "";
         ptext1.innerHTML = "If you went left...";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -263,7 +264,7 @@
         b5.style.display = "none";
         }
 
-         function goingRight(){
+    function goingRight(){
        pic.src = "";
         ptext1.innerHTML = "You end up in the vault room. Every vault is locked, though, so you head back to the front desk to find the keys. ";
         ptext2.innerHTML = "";
@@ -278,8 +279,8 @@
         b3.style.display = "block";
         b4.style.display = "block";
         b5.style.display = "none";
-        }
-        function backFront(){
+    }
+   function backFront(){
        pic.src = "";
         ptext1.innerHTML = "The men are arguing with the front counter lady, telling her to “give them the passwords,” she says ok, saying that the password was 69420. They run off, and you follow. They get into the vault, but the door shuts behind them. You forget what the passcode was.";
         ptext2.innerHTML = "";
@@ -521,7 +522,203 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-        //state machine
+    function dance(){
+        pic.src = "";
+        ptext1.innerHTML = " Quite unfortunate, really. You really don’t know how to dance. You end up miraculously kicking all of the enemies all at once. The people call you a hero, and the mayor awards you the highest honor.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "Irony End";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function roit(){
+        pic.src = "";
+        ptext1.innerHTML = "You run into a room with a bunch of donuts. This must be the rec room. You eat the entire box, then develop food poisoning.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function airduct(){
+        pic.src = "";
+        ptext1.innerHTML = "Due to your intelligence, you end up jumping. You miss by 5 feet. And hit your head on the table. That confuses the black ski mask men. They carry on, and you follow them. ";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "right";
+        b2.innerHTML = "left"
+        b1.style.display = "block";
+        b2.style.display = "block";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function airduct1(){
+        pic.src = "";
+        ptext1.innerHTML = "The ski mask men run into the vault room. Suddenly, a helicopter flies up above. The men bail, and run back into their van. You assume that they are playing hide and seek and chose you as “it,” so you chase them. The blue uniformed men come back, and take you to jail. ";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function airduct2(){
+        pic.src = "";
+        ptext1.innerHTML = "Stanley runs into the wrong room, and gets lost. Three hours later, he emerges from the room, and police are waiting for him.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function straet(){
+        pic.src = "";
+        ptext1.innerHTML = "Did you not just.... Those are the black ski mask men.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function springfield(){
+        pic.src = "";
+        ptext1.innerHTML = "So… apparently this is the executive bathroom? The very place you started? You, being you, notice this. So you try breaking the glass to get into the bank. Luckily, the window has an open handle. You pull it,  and run out into the road, searching for the vault. After running for around 4 hours, you find yourself in “Springfield,” and you meet strange yellow people. The place is full of people with iq’s just like you. You find a job.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function passcodes(){
+        pic.src = "";
+        ptext1.innerHTML = "11111...11112...11113…";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function money(){
+        pic.src = "";
+        ptext1.innerHTML = "What did you say to me?! (Several made for television Bang sounds later)...";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function okay(){
+        pic.src = "";
+        ptext1.innerHTML = "*silence*... you guys do end up stealing the money, but your friends dip and leave $10 for you to hail a cab home. ";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "Loop Ending";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function casino(){
+        pic.src = "";
+        ptext1.innerHTML = "It was red! You have $200k now. You go home.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "Rich Ending";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function charity(){
+        pic.src = "";
+        ptext1.innerHTML = "The charity thanks you for your generosity, and as a token, pay for your specialized school. Huh. The foundation that you donated to ended up being one which tried to restore the bank.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "Circle of Life Ending";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function donuts(){
+        pic.src = "";
+        ptext1.innerHTML = "Buying a lifetime supply of doughnuts, you end up donating your own life to try to discover Type 3 Diabetes. ";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "Food Coma Ending";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function mother(){
+        pic.src = "";
+        ptext1.innerHTML = "You give it to your mother who has supported you all along. She spends it all on her Saturday Bingo sessions. ";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "END";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+    function friend(){
+        pic.src = "";
+        ptext1.innerHTML = "You dump it into the lake because your friend bet a sandwich that you wouldn’t. You do, and it is never to be seen again. You end up polluting the entire lake, and it is forever known as the lake of misfortune.";
+        ptext2.innerHTML= "";
+        ptext3.innerHTML = "Stanley Special Ending";
+        ptext4.innerHTML = "";
+        b1.innerHTML = "restart";
+        b1.style.display = "block";
+        b2.style.display = "none";
+        b3.style.display = "none";
+        b4.style.display = "none";
+        b5.style.display = "none";
+    }
+         //state machine
          function bclick(button){
           if(state == "intro"){
               if (button == 1){
@@ -534,9 +731,7 @@
                   state="yea"
               }
           }
-
-
-            else if (state == "entrance"){
+                else if (state == "entrance"){
                 if(button == 1){
                     vehicleCar();
                     state="vehicleCar";
@@ -591,59 +786,60 @@
                     state="enteringBank";
                 }
             }
-
-
-            else if(state=="enteringBank"){
-                if(button ==1){
-                    punchone();
-                    state="punchone";
-                }
-               else if(button==2){
-                    whatNow();
-                    state="whatNow";
-                }
-               else if(button==3){
-                    tackle();
-                    state="tackle";
-                }
-                else if(button==4);{
-                    kick();
-                    state="kick";
-                }
+                else if(state=="enteringBank"){
+                    if(button ==1){
+                        punchone();
+                        state="punchone";
+                    }
+                else if(button==2){
+                        whatNow();
+                        state="whatNow";
+                    }
+                else if(button==3){
+                        tackle();
+                        state="tackle";
+                    }
+                    else if(button==4){
+                        kick();
+                        state="kick";
+                    }
             }
             else if(state=="whatNow"){
                 if(button==1){
-                        autograph();
-                        state="autograph";
+                    autograph();
+                    state="autograph";
                 }
                 else if(button==2){
                     insideNow();
                     state="insideNow";
                 }
                 else if(button==3){
-                    //send somewhere else
+                    dance();
+                    state="dance";
                 }
             }
-
-
             else if(state=="insideNow"){
                 if(button==1){
                     goingLeft();
                     state="goingLeft";
                 }
-                if(button==2){
-                    //end
+                else if(button==2){
+                    roit();
+                    state="roit";
                 }
-                if(button==3){
-                    //second of options(come back to this)
+                else if(button==3){
+                    airduct();
+                    state="airduct";
                 }
-                if(button==4){
-                    //end
+                else if(button==4){
+                    straet();
+                    state="straet";
                 }
             }
             else if(state=="goingLeft"){
                 if(button==1){
-                    //later edit
+                    springfield();
+                    state="springfield";
                 }
                 else if(button==2){
                     backFront();
@@ -652,7 +848,8 @@
             }
             else if(state=="backFront"){
                 if(button==1){
-                    //end
+                    passcodes();
+                    state="passcodes";
                 }
                 else if(button==2){
                     inVault();
@@ -663,15 +860,39 @@
 
             else if(state=="inVault"){
                 if(button==1){
-                    //no    
+                    money();
+                    state="money";   
                 }
                 else if(button==2){
-                    //no
+                    okay();
+                    state="okay";
                 }
                 else if(button==3){
                     doorsUnlocked();
                     state="doorsUnlocked";
                 }
+            }
+            else if(state="doorsUnlocked"){
+                if(button==1){
+                    casino();
+                    state="casino";
+                }
+            else if(button==2){
+                charity();
+                state="charity";
+            }
+            else if(button==3){
+                donuts();
+                state="donuts";
+            }
+            else if(button==4){
+                mother();
+                state="mother";
+            }
+            else if(button==5){
+                friend();
+                state="friend"
+            }
             }
             else if(state=="yea"){
                 if(button==1){
@@ -763,6 +984,70 @@
                 }
             }
             else if(state=="autograph"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="airduct"){
+                if(button==1){
+                    airduct1();
+                    state="airduct1"
+                }   
+                else if(button==2){
+                    airduct2();
+                    state="airduct2"
+                }             
+            }
+            else if(state=="springfield"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="passcodes"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="money"){
+                if(button=1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="okay"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="casino"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="charity"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="donuts"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="mother"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="friend"){
                 if(button==1){
                     intro();
                     state="intro";
