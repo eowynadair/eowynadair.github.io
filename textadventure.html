@@ -63,7 +63,7 @@
             margin: 8px;
         }
     #ptext1{
-        color: blue;
+        color: orange;
     }
     #ptext2{
         color: green;
@@ -122,7 +122,7 @@
         </div>
 
         <script>
-        {
+        
         var pic = document.getElementById('storyimg');
         var ptext1 = document.getElementById('ptext1');
         var ptext2 = document.getElementById('ptext2');
@@ -132,6 +132,7 @@
         var b2 = document.getElementById('b2');
         var b3 = document.getElementById('b3');
         var b4 = document.getElementById('b4');
+        var b5 = document.getElementById('b5');
         var state = "intro";
         intro();
 
@@ -149,7 +150,7 @@
         b4.style.display = "none";
         b5.style.display = "none";
     }
-}
+        
     function entrance(){
         pic.src = "images/hqdefault.jpg";
         ptext1.innerHTML = "Do you want to use a vehicle?";
@@ -413,7 +414,7 @@
         b1.innerHTML = "restart";
         b1.style.display = "block";
         b2.style.display = "none";
-        b3.style.display = "none";
+        b3.style.display = "none"; 
         b4.style.display = "none";
         b5.style.display = "none";
     }
@@ -728,10 +729,10 @@
               }
               else if(button == 2){
                   yea();
-                  state="yea"
+                  state="yea";
               }
           }
-                else if (state == "entrance"){
+            else if (state == "entrance"){
                 if(button == 1){
                     vehicleCar();
                     state="vehicleCar";
@@ -872,28 +873,6 @@
                     state="doorsUnlocked";
                 }
             }
-            else if(state="doorsUnlocked"){
-                if(button==1){
-                    casino();
-                    state="casino";
-                }
-            else if(button==2){
-                charity();
-                state="charity";
-            }
-            else if(button==3){
-                donuts();
-                state="donuts";
-            }
-            else if(button==4){
-                mother();
-                state="mother";
-            }
-            else if(button==5){
-                friend();
-                state="friend"
-            }
-            }
             else if(state=="yea"){
                 if(button==1){
                     intro();
@@ -912,6 +891,7 @@
                     state="intro";
                 }
             }
+            
             else if(state=="vehicleScooter"){
                 if(button==1){
                     intro();
@@ -1051,6 +1031,28 @@
                 if(button==1){
                     intro();
                     state="intro";
+                }
+            }
+            else if(state=="doorsUnlocked"){
+                if(button==1){
+                    casino()
+                    state="casino";
+                }
+                else if(button==2){
+                    charity();
+                    state="charity";
+                }
+                else if(button==3){
+                    donuts();
+                    state="donuts";
+                }
+                else if(button==4){
+                    mother();
+                    state="mother";
+                }
+                else if(button==5){
+                    friend();
+                    state="friend";
                 }
             }
            return false;
