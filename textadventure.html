@@ -137,7 +137,7 @@
         intro();
 
     function intro(){
-        pic.src = "images/wateringcan.jpg";
+        pic.src = "images/bank.jpg";
         ptext1.innerHTML = "How to Break into a Bank, Continue?";
         ptext2.innerHTML= "";
         ptext3.innerHTML = "";
@@ -152,7 +152,7 @@
     }
         
     function entrance(){
-        pic.src = "images/hqdefault.jpg";
+        pic.src = "images/trans.jpg";
         ptext1.innerHTML = "Do you want to use a vehicle?";
         ptext2.innerHTML = "";
         ptext3.innerHTML = "";
@@ -1053,6 +1053,36 @@
                 else if(button==5){
                     friend();
                     state="friend";
+                }
+            }
+            else if(state=="airduct1"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="airduct2"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="dance"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="roit"){
+                if(button==1){
+                    intro();
+                    state="intro";
+                }
+            }
+            else if(state=="straet"){
+                if(button==1){
+                    intro();
+                    state="intro";
                 }
             }
            return false;
