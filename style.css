@@ -1,7 +1,7 @@
 .navbar{
         list-style: none;
-        background: rgb(237,0,255);
-        background: linear-gradient(90deg, rgba(237,0,255,1) 0%, rgba(0,230,255,1) 100%);
+     background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(66,4,14,1) 32%, rgba(108,12,24,1) 79%, rgba(85,13,13,1) 100%);
         overflow:hidden;
         padding:0;
     }
@@ -17,7 +17,7 @@
         float:left;
     }
     .navbar li:hover{
-        background-color:lightblue;
+        background-color:#0a044a;
     }
     .dropdown-content{
         list-style:none;
@@ -25,8 +25,8 @@
         display:none;
         position:absolute;
         z-index:1;
-        background: rgb(237,0,255);
-        background: linear-gradient(90deg, rgba(237,0,255,1) 0%, rgba(0,230,255,1) 100%);
+       background: rgb(85,13,13);
+background: linear-gradient(90deg, rgba(85,13,13,1) 0%, rgba(108,12,24,1) 18%, rgba(66,4,14,1) 75%, rgba(0,0,0,1) 100%);
         border-radius: 8px;
     }
     .dropdown-content li{
@@ -37,11 +37,11 @@
         border-radius:8px;
     }
     .active{
-        background-color:lightblue;
+        background-color:#0a044a
     }
     body{
-   background: rgb(184,180,226);
-background: linear-gradient(90deg, rgba(184,180,226,1) 0%, rgba(153,210,222,1) 100%);
+   background: rgb(85,13,13);
+background: linear-gradient(90deg, rgba(85,13,13,1) 0%, rgba(108,12,24,1) 18%, rgba(66,4,14,1) 75%, rgba(0,0,0,1) 100%);
     }
   td {
   height: 50px;
